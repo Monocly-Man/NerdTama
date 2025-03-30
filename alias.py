@@ -85,10 +85,55 @@ WEAPON_NAMES = [
     },
     {
         "name": "v9s",
-        "alias": ["v9s", "v9" "v"]
+        "alias": ["v9s", "v9", "v"]
     },
     {
         "name": "xp-54",
         "alias": ["xp-54", "xp54", "xp 54", "xp", "mp5", "mp-5"]
+    },
+    {
+        "name": ".50 akimbo",
+        "alias": [".50 akimbo", ".50 akimbos", "50 akimbo", "50 akimbos", "akimbo", "akimbos", "dualies", "deags",
+                  "deagles", "deagle", ".50s", "50s", "desert eagles", "desert eagle", "max payne"]
+    },
+    {
+        "name": "flamethrower",
+        "alias": ["flamethrower", "flame thrower", "geneva suggestion"]
+    },
+    {
+        "name": "ks-23",
+        "alias": ["ks-23", "ks23", "ks 23", "ks"]
+    },
+    {
+        "name": "lewis gun",
+        "alias": ["lewis gun", "lewis"]
+    },
+    {
+        "name": "m134 minigun",
+        "alias": ["m134 minigun", "minigun", "mini gun", "mini-gun", "mini", "brrt", "brrrt", "brrrrt", "brrrrrt", "dakka"]
+    },
+    {
+        "name": "m60",
+        "alias": ["m60", "m-60", "m 60"]
+    },
+    {
+        "name": "mgl-32",
+        "alias": ["mgl-32", "mgl 32", "mgl32", "mgl"]
+    },
+    {
+        "name": "sa1216",
+        "alias": ["sa1216", "sa-1216", "sa 1216", "sa12", "sa-12", "sa 12", "sa"]
+    },
+    {
+        "name": "shak-50",
+        "alias": ["shak-50", "shak 50", "shak50", "shak", "shaq", "shaquille o'neal"]
+    },
+    {
+        "name": "sledgehammer",
+        "alias": ["sledgehammer", "sledge hammer", "sledge", "hammer", "bonk"]
+    },
+    {
+        "name": "spear",
+        "alias": ["spear", "pointy stick", "pokey stick", "stick"]
     }
 ]
