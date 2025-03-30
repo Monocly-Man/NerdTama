@@ -3,8 +3,8 @@
 # Last edited 30th March 2025
 # TODO
     # Change to actively maintained env package
+    # Migrate to slash command structure
     # Maybe rework weapons.json into separate files for each weapon?
-    # Swap to using new discord command structure (slashes and shit)
     # Add heavy's stuff to the files
     # Get all recoil patterns (fml that's gonna take a while)
     # Use pyplot and graph damage falloff??? Maybe can compare with other weapons?
@@ -19,10 +19,10 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.2")
+__version__ = str("0.2.3")
+__gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
-gamever = "6.1.0"
 
 
 # Functions
@@ -111,6 +111,12 @@ async def cmd_recoil(ctx):
         response = get_weapon(alias_result)['Recoil']
 
     await ctx.send(response)#, delete_after=20)
+
+@bot.command(name="version", help="Gets the current bot version and game version the bot is updated for.")
+async def cmd_version(ctx):
+    await ctx.channel.send(f"Running ScottyBot version {__version__}\n"
+                           f"Updated for game version {__gamever__}\n")
+    return
 
 
 # Runs bot
