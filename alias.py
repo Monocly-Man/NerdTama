@@ -36,8 +36,8 @@ WEAPON_NAMES = [
         "alias": ["pike-556", "pike 556", "pike.556", "pike556", "pike", "pike .556"]
     },
     {
-        "name": "r.357",
-        "alias": ["r.357", "r", "r.", "revolver"]
+        "name": "r .357",
+        "alias": ["r .357", "r 357", "r357", "r.357", "r", "357", "revolver"]
     },
     {
         "name": "riot shield",
@@ -117,8 +117,8 @@ WEAPON_NAMES = [
         "alias": ["m60", "m-60", "m 60"]
     },
     {
-        "name": "mgl-32",
-        "alias": ["mgl-32", "mgl 32", "mgl32", "mgl"]
+        "name": "mgl32",
+        "alias": ["mgl32", "mgl 32", "mgl-32", "mgl"]
     },
     {
         "name": "sa1216",
