@@ -19,7 +19,7 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.3")
+__version__ = str("0.2.3.1")
 __gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -39,7 +39,7 @@ def get_weapon(weapon_name):
 def weapon_embed(weapon):
     imgname = weapon['Weapon'].replace(" ", "_")
 
-    embed = discord.Embed(title=weapon['Weapon'] + " - " + gamever, colour=0x1f3c80)
+    embed = discord.Embed(title=weapon['Weapon'] + " - " + __gamever__, colour=0x1f3c80)
     if weapon['Weapon'] == "R.357":  # Annoying exception, underscore before the dot
         embed.set_thumbnail(url="https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/R_.357_Rank_1.png")
     elif weapon['Weapon'] == "CB-01 Repeater":  # Wiki misspelled the image name
