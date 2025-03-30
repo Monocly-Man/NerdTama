@@ -1,11 +1,10 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 30th March 2025
+# Last edited 31st March 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
     # Maybe rework weapons.json into separate files for each weapon?
-    # Add heavy's stuff to the files
     # Get all recoil patterns (fml that's gonna take a while)
     # Use pyplot and graph damage falloff??? Maybe can compare with other weapons?
 
@@ -19,7 +18,7 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.3.1")
+__version__ = str("0.2.3.3")
 __gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -40,9 +39,7 @@ def weapon_embed(weapon):
     imgname = weapon['Weapon'].replace(" ", "_")
 
     embed = discord.Embed(title=weapon['Weapon'] + " - " + __gamever__, colour=0x1f3c80)
-    if weapon['Weapon'] == "R.357":  # Annoying exception, underscore before the dot
-        embed.set_thumbnail(url="https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/R_.357_Rank_1.png")
-    elif weapon['Weapon'] == "CB-01 Repeater":  # Wiki misspelled the image name
+    if weapon['Weapon'] == "CB-01 Repeater":  # Wiki misspelled the image name
         embed.set_thumbnail(url="https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/CB-01_Reapeater_Rank_1.png")
     else:
         embed.set_thumbnail(url=imglink + imgname + "_Rank_1.png")
@@ -90,7 +87,8 @@ async def cmd_get(ctx):
     alias_result = search_alias(user_message.lower())
 
     if alias_result == 1:
-        response = discord.Embed(title="Weapon data not found. It hasn't been added yet.", colour=0x1f3c80)
+        await ctx.send("Weapon not found.")
+        return
     else:
         weapon = get_weapon(alias_result)
         response = weapon_embed(weapon)
@@ -106,7 +104,7 @@ async def cmd_recoil(ctx):
     alias_result = search_alias(user_message.lower())
 
     if alias_result == 1:
-        response = "Weapon data not found. It hasn't been added yet."
+        response = "Weapon data not found."
     else:
         response = get_weapon(alias_result)['Recoil']
 
