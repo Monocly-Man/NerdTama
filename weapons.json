@@ -225,12 +225,12 @@
   },
   {
     "Weapon": "M26 Matter",
-    "Damage": "121 (?x?)",
+    "Damage": "121 (11x11)",
     "Headshot": "-",
     "Firerate": "85",
     "Dropoff Start": "10",
     "Dropoff End": "17.5",
-    "Minimum Damage": "64% - 77.4 (?x?)",
+    "Minimum Damage": "64% - 77 (7x11)",
     "Magazine Size": "8",
     "Short Reload": "2.05",
     "Long Reload": "2.45",
@@ -253,7 +253,7 @@
   },
   {
     "Weapon": "SH1900",
-    "Damage": "195 (?x?)",
+    "Damage": "195 (13x15)",
     "Headshot": "-",
     "Firerate": "80",
     "Dropoff Start": "-",
