@@ -5,7 +5,6 @@
     # Change to actively maintained env package
     # Migrate to slash command structure
     # Maybe rework weapons.json into separate files for each weapon?
-    # Get all recoil patterns (fml that's gonna take a while)
     # Use pyplot and graph damage falloff??? Maybe can compare with other weapons?
 
 
