@@ -17,7 +17,7 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.3.4")
+__version__ = str("0.2.3.5")
 __gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -71,7 +71,7 @@ intents.message_content = True
 help_command = commands.DefaultHelpCommand(no_category="Commands")
 
 bot = commands.Bot(
-    command_prefix='s! ',
+    command_prefix='t! ',
     help_command=help_command,
     intents=intents
 )
@@ -80,14 +80,17 @@ bot = commands.Bot(
 @bot.event
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord! Running version {__version__}\n'
-          f'----------------------------------------'
+          f'{bot.user.name} is currently in {len(bot.guilds)} server/s:'
           )
+    for guild in bot.guilds:
+        print(guild.name)
+    print('----------------------------------------')
 
 
 @bot.command(name="get", help="Acquires the data of the named weapon. Aliases accepted.")
 async def cmd_get(ctx):
     user_message = ctx.message.content
-    user_message = user_message.replace("s! get ", "")
+    user_message = user_message.replace("t! get ", "")
 
     alias_result = search_alias(user_message.lower())
 
@@ -104,7 +107,7 @@ async def cmd_get(ctx):
 @bot.command(name="recoil", help="Acquires the recoil pattern of the named weapon. Aliases accepted.")
 async def cmd_recoil(ctx):
     user_message = ctx.message.content
-    user_message = user_message.replace("s! recoil ", "")
+    user_message = user_message.replace("t! recoil ", "")
 
     alias_result = search_alias(user_message.lower())
 
