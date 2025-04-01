@@ -120,7 +120,7 @@ async def cmd_recoil(ctx):
 
 @bot.command(name="version", help="Gets the current bot version and game version the bot is updated for.")
 async def cmd_version(ctx):
-    await ctx.channel.send(f"Running ScottyBot version {__version__}\n"
+    await ctx.channel.send(f"Running {bot.user.name} version {__version__}\n"
                            f"Updated for game version {__gamever__}\n")
     return
 
