@@ -1,6 +1,6 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 31st March 2025
+# Last edited 1st April 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
@@ -17,7 +17,7 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.3.3")
+__version__ = str("0.2.3.4")
 __gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -68,7 +68,13 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='s! ', intents=intents)
+help_command = commands.DefaultHelpCommand(no_category="Commands")
+
+bot = commands.Bot(
+    command_prefix='s! ',
+    help_command=help_command,
+    intents=intents
+)
 
 
 @bot.event
@@ -114,7 +120,6 @@ async def cmd_version(ctx):
     await ctx.channel.send(f"Running ScottyBot version {__version__}\n"
                            f"Updated for game version {__gamever__}\n")
     return
-
 
 # Runs bot
 bot.run(TOKEN)
