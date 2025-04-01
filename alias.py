@@ -48,6 +48,10 @@ WEAPON_NAMES = [
         "alias": ["93r", "93"]
     },
     {
+        "name": "arn-220",
+        "alias": ["arn-220", "arn 220", "arn220", "arn"]
+    },
+    {
         "name": "dagger",
         "alias": ["dagger", "knife", "tf2 spy"]
     },
