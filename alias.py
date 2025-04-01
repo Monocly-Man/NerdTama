@@ -5,7 +5,7 @@ WEAPON_NAMES = [
     },
     {
         "name": "cb-01 repeater",
-        "alias": ["cb-01 repeater", "repeater", "cb01 repeater", "cb 01 repeater", "winchester", "rep"]
+        "alias": ["cb-01 repeater", "cb01", "cb-01", "cb", "repeater", "cb01 repeater", "cb 01 repeater", "winchester", "rep"]
     },
     {
         "name": "cerberus 12ga",
