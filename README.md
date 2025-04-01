@@ -1,4 +1,4 @@
-# ScottyBot
+# NerdTama
 ## Disclaimer: I am aware this is running on very obsolete code, however I have no plans to migrate it to discord.ext 2.0.
 
 A Discord bot for THE FINALS. Currently running version 0.2.3, using Python 3.12. <br>
@@ -14,12 +14,11 @@ To use type "s! [COMMANDNAME] [WEAPONNAME]" in a Discord chat e.g. s! get akm <b
 - Download the files and extract to any particular location
 - Install the dependencies listed above
 - Create a Discord bot using the Discord Applications portal
-- Create a file in the ScottyBot folder called '.env'
+- Create a file in the NerdTama folder called '.env'
 - Inside the .env you should only have 2 lines:
 >\# .env<br>
 >DISCORD_TOKEN=[YOUR TOKEN HERE]
 - Run main.py to connect to discord
-- The permissions integer for ScottyBot is 115712
 
 ## The files
 main.py - The main body of the program. <br>
