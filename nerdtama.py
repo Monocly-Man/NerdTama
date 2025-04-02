@@ -1,6 +1,6 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 1st April 2025
+# Last edited 2nd April 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
@@ -17,7 +17,7 @@ from discord.ext import commands
 import alias
 
 # Variables
-__version__ = str("0.2.3.5")
+__version__ = str("0.2.4.1")
 __gamever__ = str("6.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -87,7 +87,8 @@ async def on_ready():
     print('----------------------------------------')
 
 
-@bot.command(name="get", help="Acquires the data of the named weapon. Aliases accepted.")
+@bot.command(name="get", help="Usage: t! get [weaponname]\n"
+                              "Acquires the data of the named weapon. Aliases accepted.")
 async def cmd_get(ctx):
     user_message = ctx.message.content
     user_message = user_message.replace("t! get ", "")
@@ -104,7 +105,8 @@ async def cmd_get(ctx):
     await ctx.send(embed=response)#, delete_after=20)
 
 
-@bot.command(name="recoil", help="Acquires the recoil pattern of the named weapon. Aliases accepted.")
+@bot.command(name="recoil", help="Usage: t! recoil [weaponname]\n"
+                                 "Acquires the recoil pattern of the named weapon. Aliases accepted.")
 async def cmd_recoil(ctx):
     user_message = ctx.message.content
     user_message = user_message.replace("t! recoil ", "")
