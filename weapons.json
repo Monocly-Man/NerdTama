@@ -464,7 +464,7 @@
   {
     "Weapon": "Sledgehammer",
     "Damage": "115 | 200",
-    "Headshot": "1-",
+    "Headshot": "-",
     "Firerate": "???",
     "Dropoff Start": "Melee",
     "Dropoff End": "-",
