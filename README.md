@@ -1,7 +1,8 @@
 # NerdTama
-## Disclaimer: I am aware this is running on very obsolete code, however I have no plans to migrate it to discord.ext 2.0.
+## Disclaimer: I am aware this is running on very obsolete code, however I have no short-term plans to migrate it to discord.ext 2.0.
+I may migrate it in the future, however I'm currently busy with uni and can't really be bothered to migrate it over.
 
-A Discord bot for THE FINALS. Currently running version 0.2.3, using Python 3.12. <br>
+A Discord bot for THE FINALS. Currently running version 0.2.4, using Python 3.12. <br>
 Requires the following python libraries: os, json, dotenv (deprecated, planned to be replaced), discord.ext (not migrated to 2.0) <br>
 Heavily based off of my previous BolboBot project, which in turn was based on the [old Tekken 7 frame bot](https://github.com/BKNR/mokujin) by BKNR.
 Please send all feedback/ideas to monocly_man on Discord, I don't check GitHub very often.
