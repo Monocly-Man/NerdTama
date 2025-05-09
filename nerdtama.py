@@ -1,6 +1,6 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 2nd April 2025
+# Last edited 9th May 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
@@ -11,13 +11,14 @@
 import os
 import json
 import discord
+import datetime
 from dotenv import load_dotenv      # Using deprecated module cause this is a fork from an older project
 from discord.ext import commands
 
 import alias
 
 # Variables
-__version__ = str("0.2.4.1")
+__version__ = str("0.2.5")
 __gamever__ = str("6.6.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
@@ -90,6 +91,8 @@ async def on_ready():
 @bot.command(name="get", help="Usage: t! get [weaponname]\n"
                               "Acquires the data of the named weapon. Aliases accepted.")
 async def cmd_get(ctx):
+    # Hacky fix to truncate the miliseconds and nanoseconds from datetime.now
+    print(f"[{str(datetime.datetime.now())[0:19]}] cmd_get called by {ctx.author} in {ctx.guild}")
     user_message = ctx.message.content
     user_message = user_message.replace("t! get ", "")
 
@@ -106,15 +109,17 @@ async def cmd_get(ctx):
 
 
 @bot.command(name="recoil", help="Usage: t! recoil [weaponname]\n"
-                                 "Acquires the recoil pattern of the named weapon. Aliases accepted.")
+                                 "Acquires the recoil pattern of the named weapon. Aliases accepted."
+                                 "Recoil patterns taken at approximately 10 metres away.")
 async def cmd_recoil(ctx):
+    print(f"[{str(datetime.datetime.now())[0:19]}] cmd_recoil called by {ctx.author} in {ctx.guild}")
     user_message = ctx.message.content
     user_message = user_message.replace("t! recoil ", "")
 
     alias_result = search_alias(user_message.lower())
 
     if alias_result == 1:
-        response = "Weapon data not found."
+        response = "Weapon not found."
     else:
         response = get_weapon(alias_result)['Recoil']
 
@@ -125,6 +130,12 @@ async def cmd_version(ctx):
     await ctx.channel.send(f"Running {bot.user.name} version {__version__}\n"
                            f"Updated for game version {__gamever__}\n")
     return
+
+@bot.event
+async def on_command_error(ctx, error):
+    print(f"[{str(datetime.datetime.now())[0:19]}] invalid command by {ctx.author} in {ctx.guild}")
+    if isinstance(error, commands.CommandNotFound):
+        await ctx.send("?")
 
 # Runs bot
 bot.run(TOKEN)
