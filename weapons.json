@@ -295,9 +295,9 @@
   },
   {
     "Weapon": "Throwing Knives",
-    "Damage": "60x2 | 140",
-    "Headshot": "1.5X - 90x2 | 210",
-    "Firerate": "545",
+    "Damage": "120 (60x2) | 140",
+    "Headshot": "1.5X - 180 (90x2) | 210",
+    "Firerate": "545 - 0.59s delay",
     "Dropoff Start": "-",
     "Dropoff End": "-",
     "Minimum Damage": "-",
