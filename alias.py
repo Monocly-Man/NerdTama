@@ -73,7 +73,7 @@ WEAPON_NAMES = [
     },
     {
         "name": "sh1900",
-        "alias": ["sh1900", "sh-1900", "sh", "dbs", "double barrel", "double barrel shotgun", "lupara"]
+        "alias": ["sh1900", "sh-1900", "sh", "dbs", "db", "double barrel", "double barrel shotgun", "lupara"]
     },
     {
         "name": "sr-84",
@@ -130,7 +130,7 @@ WEAPON_NAMES = [
     },
     {
         "name": "shak-50",
-        "alias": ["shak-50", "shak 50", "shak50", "shak", "shaq", "shaquille o'neal"]
+        "alias": ["shak-50", "shak 50", "shak50", "shak", "shaq", "shaquille o'neal", "shack", "shack 50", "shack50", "shack-50"]
     },
     {
         "name": "sledgehammer",
