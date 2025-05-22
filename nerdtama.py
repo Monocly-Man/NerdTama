@@ -19,7 +19,7 @@ import alias
 
 # Variables
 __version__ = str("0.2.5")
-__gamever__ = str("6.6.0")
+__gamever__ = str("6.9.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
 
