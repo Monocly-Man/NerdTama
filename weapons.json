@@ -6,7 +6,7 @@
     "Firerate": "600",
     "Dropoff Start": "30",
     "Dropoff End": "37.5",
-    "Minimum Damage": "55% - 16.5",
+    "Minimum Damage": "55% - 11",
     "Magazine Size": "32",
     "Short Reload": "2.35",
     "Long Reload": "2.35",
@@ -19,7 +19,7 @@
     "Headshot": "1.5X - 126",
     "Firerate": "77",
     "Dropoff Start": "40",
-    "Dropoff End": "40",
+    "Dropoff End": "45",
     "Minimum Damage": "69% ~58",
     "Magazine Size": "8",
     "Short Reload": "0.55/round",
@@ -81,7 +81,7 @@
     "Short Reload": "2.15",
     "Long Reload": "2.60",
     "Notes": "-",
-    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1356473059858710538/Screenshot_2025-03-31_160319.png?ex=67ecb17b&is=67eb5ffb&hm=65723800a090f7b72821e74e18402d93e1e3fea48125a2311f3f70a28e4f249f&"
+    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1375060284921872475/image.png?ex=6830502f&is=682efeaf&hm=c0e849365b57703dd4b9570efb8255c4c1cca1e21563da247b85d982909dbd4e&"
   },
   {
     "Weapon": "FCAR",
@@ -178,8 +178,8 @@
     "Magazine Size": "30 (60)",
     "Short Reload": "2.45",
     "Long Reload": "2.80 (0.75)",
-    "Notes": "Double mag grants 1 fast empty reload, second mag has reduced recoil if you keep holding fire during quick reload.",
-    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1356474677299642399/Screenshot_2025-04-01_114535.png?ex=67ecb2fd&is=67eb617d&hm=a706972f99fdc49b5ff24894886cd4ff52786c84d3d31fa8a780ad1c1bc13a83&"
+    "Notes": "Double mag grants 1 fast empty reload, functions identically to SA-12.",
+    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1375060703173546055/image.png?ex=68305093&is=682eff13&hm=08c46f4f19906e9199a40fe053f75cbe8eb82b5ea9879fe4a7c42d705836e3d4&"
   },
   {
     "Weapon": "Dagger",
@@ -221,7 +221,7 @@
     "Short Reload": "1.55",
     "Long Reload": "1.85",
     "Notes": "-",
-    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1356474948595617812/Screenshot_2025-03-31_160729.png?ex=67ecb33d&is=67eb61bd&hm=7e285b65fad2af73d0597870df2f0dfa2e1e687da51e5c9b9bdca2f9e11c8c33&"
+    "Recoil": "https://cdn.discordapp.com/attachments/1355814670782693446/1375059425068584970/image.png?ex=68304f62&is=682efde2&hm=89a2152dee143e92e73a2da26fe097b7228c9a74ded58db115ea52b0bb48ffad&"
   },
   {
     "Weapon": "M26 Matter",
@@ -323,9 +323,9 @@
   },
   {
     "Weapon": "XP-54",
-    "Damage": "17",
+    "Damage": "16",
     "Headshot": "1.5X - 25.5",
-    "Firerate": "850",
+    "Firerate": "860",
     "Dropoff Start": "22.5",
     "Dropoff End": "32.5",
     "Minimum Damage": "52% - 8.8",
