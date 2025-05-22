@@ -9,7 +9,7 @@ Please send all feedback/ideas to monocly_man on Discord, I don't check GitHub v
 
 Weapon data acquired from [Zafferman's master sheet](https://docs.google.com/spreadsheets/d/1Ud7Rdl3AgMw9mmfDwW2LtDMnzZQ9IIhnqSE4ivsaMTs/edit?gid=2136619021#gid=2136619021), and the official patchnotes.
 
-To use type "s! [COMMANDNAME] [WEAPONNAME]" in a Discord chat e.g. s! get akm <br>
+To use type "t! [COMMANDNAME] [WEAPONNAME]" in a Discord chat e.g. s! get akm <br>
 
 ## To install and run your own instance of NerdTama
 - Download the files and extract to any particular location
