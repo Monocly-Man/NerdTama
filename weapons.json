@@ -324,11 +324,11 @@
   {
     "Weapon": "XP-54",
     "Damage": "16",
-    "Headshot": "1.5X - 25.5",
+    "Headshot": "1.5X - 24",
     "Firerate": "860",
     "Dropoff Start": "22.5",
     "Dropoff End": "32.5",
-    "Minimum Damage": "52% - 8.8",
+    "Minimum Damage": "52% - 8.32",
     "Magazine Size": "34",
     "Short Reload": "2.25",
     "Long Reload": "2.5",
