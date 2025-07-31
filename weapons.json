@@ -25,7 +25,7 @@
     "Short Reload": "0.55/round",
     "Long Reload": "5.05",
     "Notes": "-",
-    "Recoil": "It's lever action, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Cerberus 12GA",
@@ -52,8 +52,8 @@
     "Magazine Size": "5",
     "Short Reload": "0.70/round",
     "Long Reload": "3.95",
-    "Notes": "Max damage blast radius is 0.6m",
-    "Recoil": "It's pump action, dumbass"
+    "Notes": "Max damage blast radius is 0.5m, falls off linearly to 3m",
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Dual Blades",
@@ -67,7 +67,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Can deflect bullets",
-    "Recoil": "It's two machetes, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "FAMAS",
@@ -137,13 +137,13 @@
     "Short Reload": "2.20",
     "Long Reload": "2.50",
     "Notes": "-",
-    "Recoil": "It's single shot, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Riot Shield",
     "Damage": "90",
     "Headshot": "-",
-    "Firerate": "???",
+    "Firerate": "0.81s per swing",
     "Dropoff Start": "Melee",
     "Dropoff End": "-",
     "Minimum Damage": "-",
@@ -151,7 +151,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Shield passively blocks bullets, even when not raised",
-    "Recoil": "It's a baton, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "93R",
@@ -193,7 +193,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Backstab angle is 150 degrees behind opponent",
-    "Recoil": "It's a knife, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "LH1",
@@ -249,7 +249,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Projectile. Takes ~0.64s to fully charge a shot. Damage increases linearly based on charge time.",
-    "Recoil": "It's a bow, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "SH1900",
@@ -277,21 +277,21 @@
     "Short Reload": "1.95",
     "Long Reload": "3.35",
     "Notes": "Hitscan to 40m, projectile afterwards",
-    "Recoil": "It's a bolt action rifle, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Sword",
-    "Damage": "74 | 105",
+    "Damage": "88 | 120",
     "Headshot": "-",
-    "Firerate": "???",
+    "Firerate": "0.6s per swing",
     "Dropoff Start": "Melee",
     "Dropoff End": "-",
     "Minimum Damage": "-",
     "Magazine Size": "-",
     "Short Reload": "-",
     "Long Reload": "-",
-    "Notes": "Lunge range is approx 6m",
-    "Recoil": "It's a sword, dumbass"
+    "Notes": "Lunge range is approx 7m, camera rotation restricted to 40 degrees during lunge",
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Throwing Knives",
@@ -305,7 +305,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Projectile, alt fire has flatter arc than main fire",
-    "Recoil": "They're throwing knives, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "V9S",
@@ -361,7 +361,7 @@
     "Short Reload": "3.55",
     "Long Reload": "3.55",
     "Notes": "-",
-    "Recoil": "It's a flamethrower, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "KS-23",
@@ -374,8 +374,8 @@
     "Magazine Size": "6",
     "Short Reload": "0.90s/round",
     "Long Reload": "5.55",
-    "Notes": "Projectile. Extreme structural damage",
-    "Recoil": "It's pump action, dumbass"
+    "Notes": "Hitscan to 25m, projectile afterwards. Extreme structural damage",
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Lewis Gun",
@@ -431,7 +431,7 @@
     "Short Reload": "2.85",
     "Long Reload": "3.10",
     "Notes": "Rounds explode on second impact, or after 2.5s. Max damage blast radius is 1.50m",
-    "Recoil": "It's a rotary grenade launcher, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "SA1216",
@@ -473,7 +473,7 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Alt fire cannot cleave multiple targets",
-    "Recoil": "It's a sledgehammer, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   },
   {
     "Weapon": "Spear",
@@ -487,6 +487,6 @@
     "Short Reload": "-",
     "Long Reload": "-",
     "Notes": "Standard fire has 3 different hits, alternate fire is 3 hit combo with 3m radius.",
-    "Recoil": "It's a spear, dumbass"
+    "Recoil": "https://cdn.discordapp.com/attachments/1265356708822253670/1310431114212409425/attachment.gif?ex=684f8094&is=684e2f14&hm=199701b7769a18414a49ece60207b1fd8b7276e65e1fc302fdd526b8af9a1547&"
   }
 ]
