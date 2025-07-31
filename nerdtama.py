@@ -1,6 +1,6 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 9th May 2025
+# Last edited 24th June 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
@@ -14,12 +14,15 @@ import discord
 import datetime
 from dotenv import load_dotenv      # Using deprecated module cause this is a fork from an older project
 from discord.ext import commands
+from random import choice, sample
 
 import alias
+import equipment
+import maps
 
 # Variables
-__version__ = str("0.2.5")
-__gamever__ = str("7.0.0")
+__version__ = str("0.3.1")
+__gamever__ = str("7.6.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
 
@@ -60,6 +63,24 @@ def search_alias(weapon_name):
         return name
     else:
         return 1
+
+
+def random_loadout():
+    spec = choice(equipment.CLASSES)
+
+    if spec in equipment.CLASSES[0:3]:
+        wep = choice(equipment.WEP_L)
+        gad = sample(equipment.GAD_L, 3)
+
+    elif spec in equipment.CLASSES[3:6]:
+        wep = choice(equipment.WEP_M)
+        gad = sample(equipment.GAD_M, 3)
+
+    else:
+        wep = choice(equipment.WEP_H)
+        gad = sample(equipment.GAD_H, 3)
+
+    return spec, wep, gad[0], gad[1], gad[2]
 
 
 # Main
@@ -124,6 +145,23 @@ async def cmd_recoil(ctx):
         response = get_weapon(alias_result)['Recoil']
 
     await ctx.send(response)#, delete_after=20)
+
+
+@bot.command(name="loadout", help="Usage: t! loadout\n"
+                                  "Generates a random loadout.")
+async def cmd_loadout(ctx):
+    print(f"[{str(datetime.datetime.now())[0:19]}] cmd_loadout called by {ctx.author} in {ctx.guild}")
+    spec, wep, gad0, gad1, gad2 = random_loadout()
+    await ctx.send(f"{spec}, {wep} | {gad0}, {gad1}, {gad2}")
+
+
+@bot.command(name="map", help="Usage: t! map\n"
+                              "Randomly selects a map.")
+async def cmd_map(ctx):
+    print(f"[{str(datetime.datetime.now())[0:19]}] cmd_map called by {ctx.author} in {ctx.guild}")
+    map = choice(maps.MAPS)
+    await ctx.send(f"{map}")
+
 
 @bot.command(name="version", help="Gets the current bot version and game version the bot is updated for.")
 async def cmd_version(ctx):
