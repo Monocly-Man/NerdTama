@@ -1,6 +1,6 @@
 # The Finals weapon data bot, by Monocly Man
 # Created 30th of March 2025 in python version 3.12.1 (I can't be bothered to update)
-# Last edited 24th June 2025
+# Last major edit 24th June 2025
 # TODO
     # Change to actively maintained env package
     # Migrate to slash command structure
@@ -21,8 +21,8 @@ import equipment
 import maps
 
 # Variables
-__version__ = str("0.3.1")
-__gamever__ = str("7.6.0")
+__version__ = str("0.3.2")
+__gamever__ = str("9.1.0")
 dirname = os.path.dirname(__file__)
 imglink = str("https://mywikis-eu-wiki-media.s3.eu-central-2.wasabisys.com/thefinals/")
 
@@ -57,7 +57,7 @@ def weapon_embed(weapon):
 
 
 def search_alias(weapon_name):
-    weapon_alias = list(filter(lambda x: (weapon_name in x["alias"]), alias.WEAPON_NAMES))
+    weapon_alias = list(filter(lambda x: (weapon_name in x["alias"]), alias.WEAPON_NAMES)) # i love python's lambda bullshit so much
     if weapon_alias:
         name = weapon_alias[0]["name"]
         return name
@@ -65,9 +65,10 @@ def search_alias(weapon_name):
         return 1
 
 
+# It's 2026 bro turn this into a mf switch case already
 def random_loadout():
     spec = choice(equipment.CLASSES)
-
+    
     if spec in equipment.CLASSES[0:3]:
         wep = choice(equipment.WEP_L)
         gad = sample(equipment.GAD_L, 3)
@@ -173,7 +174,8 @@ async def cmd_version(ctx):
 async def on_command_error(ctx, error):
     print(f"[{str(datetime.datetime.now())[0:19]}] invalid command by {ctx.author} in {ctx.guild}")
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("?")
+        await ctx.send("Unrecognised command. Commands are case sensitive (\"t! get x\" works but \"t! Get x\" doesn't)")
+        # This used to be just "?" but somehow people couldn't figure out it's fucking case sensitive even though I told them like seventeen million times
 
 # Runs bot
 bot.run(TOKEN)
