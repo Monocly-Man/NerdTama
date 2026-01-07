@@ -29,15 +29,19 @@ WEAPON_NAMES = [
     },
     {
         "name": "model 1887",
-        "alias": ["model 1887", "model", "1887"]
+        "alias": ["model 1887", "model", "1887", "model1887"]
     },
     {
         "name": "pike-556",
         "alias": ["pike-556", "pike 556", "pike.556", "pike556", "pike", "pike .556"]
     },
     {
+        "name": "p90",
+        "alias": ["p90", "p-90", "p 90", "pro 90"]
+    },
+    {
         "name": "r .357",
-        "alias": ["r .357", "r 357", "r357", "r.357", "r", "357", "revolver"]
+        "alias": ["r .357", "r 357", "r357", "r.357", "r", "357", "revolver", "big iron"]
     },
     {
         "name": "riot shield",
@@ -97,8 +101,12 @@ WEAPON_NAMES = [
     },
     {
         "name": ".50 akimbo",
-        "alias": [".50 akimbo", ".50 akimbos", "50 akimbo", "50 akimbos", "akimbo", "akimbos", "dualies", "deags",
+        "alias": [".50 akimbo", ".50 akimbos", ".50", "50 akimbo", "50 akimbos", "akimbo", "akimbos", "dualies", "deags",
                   "deagles", "deagle", ".50s", "50s", "desert eagles", "desert eagle", "max payne"]
+    },
+    {
+        "name": "bfr titan",
+        "alias": ["bfr titan", "bfr", "titan", "big fucking revolver", "bigger iron", "heavy revolver", "big revolver"]
     },
     {
         "name": "flamethrower",
